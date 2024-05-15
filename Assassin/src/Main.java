@@ -3,10 +3,15 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		List <String> testList = Arrays.asList("Michael", "Benjamin");	
+		List <String> testList = Arrays.asList("Alex", "Benjamin", "Cade");	
 		AssassinManager test = new AssassinManager(testList);
 		test.printKillRing();
-		System.out.println(test.killRingContains("Benjamin"));
+		test.kill("Alex");
+		test.kill("Cade");
+		System.out.println();
+		test.printKillRing();
+		System.out.println();
+		test.printGraveyard();
 	}
 
 }
