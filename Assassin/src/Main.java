@@ -12,6 +12,7 @@ public class Main {
 		test.printKillRing();
 		System.out.println();
 		test.printGraveyard();
+		System.out.println("alldone");
 	}
 
 }
